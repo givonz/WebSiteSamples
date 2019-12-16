@@ -1,0 +1,429 @@
+<!DOCTYPE html><!-- HTML 5 -->
+<html lang="en-US">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+<title>Cinderella</title>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine|Dancing+Script|Pinyon+Script">
+<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Euphoria+Script|Rouge Script'>
+<link href="http://fonts.googleapis.com/css?family=Alef+Hebrew" rel="stylesheet" type="text/css">
+
+<style>
+/* GZ Style */
+
+body { margin-top:0; }
+
+#banner {
+	margin-right:auto;
+	margin-left:auto;
+	border:2px solid black;
+	border-radius:20px;
+	/* text-transform:uppercase; */
+	/* font-size:48px; */
+	/* background-color:#66ccff;  too manly */
+	background-color: purple;
+	width:476px;
+	height:170px;
+	text-align:center;
+	font-family: "Alef Hebrew", "Rouge Script", Verdana, Arial, serif;
+	font-weight: 900px;
+}
+
+#bannerPic {
+	border-radius:18px;
+	height:169px;
+	width:180px;
+	padding:0px;
+}
+
+#bannerTitle {
+	padding:15px;
+	text-align:center;
+	width:180px;
+	font-size:90px;
+	/* color:pink; */
+	color:#FA7DAD;
+}
+
+#navbar {
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15px;
+	border:1px solid black;
+	border-radius:25px;
+	background-color:#66ccff;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:330px;
+}
+
+#footer {
+	margin-right:auto;
+	margin-left:auto;
+	border:1px solid black;
+	border-radius:25px;
+	/* background-color:#66ccff; */
+	/* background-color: violet; */
+	background-color:#FA7DAD;
+	padding-top:1px;
+	padding-bottom:1px;
+	width:275px;
+	text-align:center;
+	font-family: Tangerine, Verdana, Arial, serif;
+	font-weight: 800;
+	line-height: 0.3;
+}
+
+
+#phoneNum {
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 120%;
+	padding-top: 2px;
+}
+
+#emailAddr {
+	font-family: Verdana, Arial, serif;
+	font-style: bold;
+	font-variant: small-caps;
+	line-height: 120%;
+	padding-bottom: 2px;
+}	
+
+#advert {
+	margin-right:auto;
+	margin-left:auto;
+	background:red;
+	border-radius:5px;
+	line-height:220%;
+	text-align:center;
+	max-width:315px;
+	letter-spacing:2px;"
+	font-family:  Verdana, Arial, serif;
+	font-size: 14px;
+	/* font-style:bold; */
+	/* font-weight:600; */
+	font-variant: small-caps;
+}
+
+input[type="submit"] {
+	border-radius:25px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+	margin-right:auto;
+	margin-left:25px;
+	font-size:14px;
+	width:480px;
+}
+
+#mainPresentation {
+	margin-top:5px;  /* different for height */
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+	clear:both;
+	font-weight:600;
+}
+
+#mainPresentation ul {
+	text-align:center;
+}
+
+#navbar a { 
+	background-color:#0000ff;
+	color:#FFFFFF;
+	font-size:14px;
+	margin-right:5px;
+	margin-left:5px;
+	padding-right:8px;
+	padding-left:8px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:10px;
+}
+
+.footnote {
+	font-size:12px;
+	letter-spacing:1px;
+	font-weight:800;
+}
+
+.footnote2 {
+	font-size:12px;
+	letter-spacing:1px;
+	color:yellow;
+	background:purple;
+	border-radius:5px;
+	padding:5px 5px 5px 5px;
+}
+
+input [type], .formInput { font-size:14px; }
+
+.messageBody { overvflow:scroll; }
+
+#wholePage {
+	border:3px solid black;
+	border-radius:25px;
+	width:480px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:yellow;
+}
+
+#submenu {
+	display:none; 
+} 
+
+#dropdown:hover + ul#submenu{
+	display:block;
+	float:right;
+	list-style-type:none;
+	text-align:left;
+	margin-right:95px;
+	margin-top:25px;
+}
+
+#servicesRendered {
+	list-style-position:inside;
+	margin-right:50px;
+}
+/* imported menu style sheet */
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+#cssmenu {padding: 5px;  margin: 0;  border: 0;}  /* different padding to reduce height */
+#cssmenu ul, #cssmenu li {list-style: none; margin: 0; padding: 0;}
+#cssmenu ul {position: relative; z-index: 597; }
+/* #cssmenu ul li { float: left; min-height: 1px; vertical-align: middle;} */
+#cssmenu ul li { float: left; min-height: 1px; vertical-align: middle; letter-spacing: 1px;}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
+#cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+#cssmenu ul ul li {float: none;}
+#cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
+#cssmenu ul li:hover > ul { visibility: visible;}
+#cssmenu ul ul {bottom: 0; left: 0;}
+#cssmenu ul ul {margin-top: 0; }
+#cssmenu ul ul li {font-weight: normal;}
+#cssmenu a { display: block; line-height:1em; text-decoration: none; }
+
+#cssmenu {
+  /* background: #66ccff; */
+  /* background: violet; */
+  background:#FA7DAD;
+  border-bottom: 4px solid #1b9bff;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px; 
+  margin-top:5px;
+  border-radius:20px;
+}
+
+#cssmenu > ul { *display: inline-block; left:5%;}
+
+#cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+#cssmenu a {
+    background: #0000ff; 
+    color: #CBCBCB;
+    padding: 0 20px; 
+}
+
+#cssmenu ul { text-transform: uppercase; }
+
+#cssmenu ul ul {
+      border-top: 4px solid #1b9bff;
+      text-transform: none;
+      min-width: 190px; 
+}
+
+#cssmenu ul ul a {
+        /* background: #1b9bff; */
+        background:#0000ff;
+        color: #FFF;
+        border: 1px solid #0082e7;
+        border-top: 0 none;
+        line-height: 100%;
+        padding: 16px 20px; 
+	     border-radius:20px;
+        content: '-->';
+}
+
+#cssmenu ul ul a:after {
+        content: '-->';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -8px;
+}
+
+#cssmenu ul ul ul { border-top: 0 none; }
+
+#cssmenu ul ul li { position: relative }
+
+#cssmenu > ul > li > a { line-height: 48px;  }
+
+#cssmenu ul ul li:first-child > a { border-top: 1px solid #0082e7; }
+#cssmenu ul ul li:hover > a { background: #35a6ff; }
+
+#cssmenu ul ul li:last-child > a {
+          /* border-radius: 0 0 3px 3px; */
+	       border-radius:20px;
+          box-shadow: 0 1px 0 #1b9bff; 
+}
+
+#cssmenu ul ul li:last-child:hover > a { 
+       /* border-radius: 0 0 3px 3px; */
+	    border-radius:20px;
+}
+
+#cssmenu ul ul li.has-sub > a:after {
+          content: '-->';
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          margin-top: -8px;
+ }
+
+ #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
+      /* background: #1b9bff; */
+	background:#0000ff;
+      color: #FFF;
+	border-radius:20px;
+	margin-right:10px;
+ }
+
+ #cssmenu ul li.has-sub > a {  /* rounding middle tabs */
+      /* background: #1b9bff; */
+	background:#0000ff;
+      color: #FFF;
+	border-radius:20px;
+	margin-right:10px;
+ }
+
+#cssmenu ul li.has-sub > a:after {
+      content: '-->';
+      margin-left: 5px; 
+}
+
+#cssmenu ul li.last ul {
+      left: auto;
+      right: 0;
+}
+
+ #cssmenu ul li.last ul ul {
+        left: auto;
+        right: 99.5%;
+ }
+
+/* does nothing */
+#cssmenu ul il.has-sub ul {
+	background:#0000ff;
+}
+
+</style>
+
+</head>
+
+<!-- @import url("http://fonts.googleapis.com/earlyaccess/alefhebrew.css"); -->
+
+<body>
+   <div id="wholePage">
+
+	<div id="banner">
+	<table border=0 cellspacing=0>
+	<tr>
+	<td><img id="bannerPic" align=left src="house cleaning.jpg"  height=130></td>
+	<td id="bannerTitle" align=center height=130>Cinderella</td>
+	</tr>
+	</table>
+	</div>
+
+	<!-- nav id="navbar">
+		<div class="navTabs" align=center>
+		<a href="Cinderella_Home.html">Home</a>
+		<a href="#" id="dropdown">Make an Appointment</a>
+			<ul id="submenu" >
+			    <li><a href="mailto:">To Clean Your House</a></li>
+			    <li ><a href="mailto:">To Clean Your Apt</a></li>
+			    <li><a href="mailto:">To Clean Your Condo</a></li>
+			    <li><a href="mailto:">To Clean Your Office</a></li>
+      		    <li><a href="mailto:">To Clean Your Boat</a></li>
+            </ul>
+		<a href="Cinderella_Contact.html">Contact</a>
+		</div>
+	</nav -->
+
+	<div id='cssmenu'>
+  	  <ul>
+     	    <li class='active'><a href='Cinderella_Home.html'>Home</a></li>
+     	    <li class='has-sub '><a href='#'>Make An Appointment</a>
+        	<ul>
+		     <li><a href="mailto:jprp93@yahoo.com?subject=Clean My Apt Please!&body=I need my apartment cleaned now!%0A%0AName:%0A%0AAddress1:%0A%0AAddress2:%0A%0ACity:%0A%0APhone:%0A%0A" onclick="return myFunction();">To Clean Your Apt</a></li>
+		     <li><a href="mailto:jprp93@yahoo.com?subject=Clean My House Please!&body=I need my house cleaned now!">To Clean Your House</a></li>
+		     <li><a href="mailto:jprp93@yahoo.com?subject=Clean My Condo Please!&body=I need my condo cleaned now!">To Clean Your Condo</a></li>
+		     <li><a href="mailto:jprp93@yahoo.com?subject=Clean My Office Please!&body=I need my office cleaned now!">To Clean Your Office</a></li>
+      	     <li><a href="mailto:jprp93@yahoo.com?subject=Clean My Boat Please!&body=I need my boat cleaned now!">To Clean Your Boat</a></li>
+        	</ul>
+     	   </li>
+         <li class="active"><a href='#'>Contact</a></li>
+  	 </ul>
+	</div>
+	
+	<div id="mainPresentation" >
+		<form id="contactEmail" name="e_form">
+		<fieldset>
+			<legend="Contact Form">
+			<label for="emadd">Email: </label>
+			<input type="text" class="formInput" name="emadd" size="30">
+			<p>
+			<label for="Subject">Subject: </label>
+			<input type="text" class="formInput" name="subj" value="Email subject here">
+			<p>
+			<label for="emadd">Message:</label>
+			<textarea name="bodyEmail" id="messageBody" cols="50" rows="4">Your message here</textarea>
+			<div align=center>
+			<input type="button" class="formInput" Value="Send E-mail" onClick="e_friend(this.form.emadd.value,this.form.subj.value,this.form.bodyEmail.value)">
+			</div>
+			</form> 	
+		</fieldset>
+	<p>
+	</div> <!-- end mainPresentation -->
+	<div id="advert">
+	<h3>Make an appointment today!</h3>
+	</div>
+	<footer id="footer">
+	<section id="phoneNum">888-CLEAN-UP</section>
+	<section id="emailAddr">CinderellaNCarol@gmail.com</section>
+	</footer>
+	<p class="footnote" align=center>Bonded maids available.
+	<br><br>
+	<a class="footnote2" href="mailto:givonzirkdin@gmail.com?Subject=Cinderella">Givon Zirkind, Web Design</a>
+		
+   </div> <!-- end wholePage div -->
+
+<SCRIPT language="JavaScript">
+<!--
+function e_friend(e_add,subject1,body)
+{
+window.location="mailto:"+e_add+"?subject="+subject1+"&body="+body;
+}
+//-->
+</SCRIPT>
+
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html><!-- HTML 5 -->
+<html lang="en-US">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+<title>Web Site For a Professional</title>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine|Dancing+Script|Pinyon+Script">
+<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Euphoria+Script|Rouge Script'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Arvo|Rokkitt|Bowlby+One+SC|Diplomata+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
+
+<!-- link rel="stylesheet" type="text/css" href='BoilerPlateStyleSheet.css' -->
+<link rel="stylesheet" type="text/css" href='BoilerPlateStyleSheet_CrystalBlue.css'>
+<!-- link rel="stylesheet" type="text/css" href='BoilerPlateStyleSheet_Green.css' -->
+
+<script src="datetimepicker_css.js"></script>
+
+</head>
+
+<body onload="loadHome();">
+
+   <div id="wholePage">
+
+	<div id="bannerTitle">Simply Feel Better</div>
+
+	<div id="banner">
+	   <figure id="bannerPic" ><img src="carol_crystal_two.jpg" ></figure>
+	   <div id="thePro">
+		<p id="namePractitioner">Carol Crystal, <span id="letters">BA, CMT, CHHC</span>
+		<p id="subTitle">Licensed Message Therapist
+		<p id="membership" style="font-size:14px;line-height:2em;"><span style="font-style:italic;font-weight:bold;border-bottom: 2px solid grey;">Member:</span>  &nbsp; <span style="font-style:italic;font-weight:bold;">AADP (American Association of Drugless Practitioners)</span> 
+	   </div>
+	</div>
+	<div id="contactTitle">
+		<address id="contactAddress">Offices in Hoboken & Jersey City, NJ</address>
+		<address id="phoneNum">201-913-2864</address>
+	</div>
+
+	<div id='cssmenu' class="centerCssmenu">
+  	  <ul>
+     	    <li class="active"><a href='#' id="HomeTab"  class="NavBarTab" onclick="showHome();">Home</a></li>
+     	    <li class="active"><a href='#' id="AboutTab" class="NavBarTab" onclick="showAbout();">About</a></li>
+     	    <li class="has-sub"><a href='#'>Education</a>
+				<ul>     	      
+	          <li><a href="#" onclick="window.open('http://www.integrativenutrition.com/');"><span style="text-decoration:underline;">Institute For Integrative Nutrition</span></a></li>
+	          <li><a href="#">Health Choices Institute</a></li>
+	          <li><a href="#">Holistic Massage School</a></li>
+		  		 <li><a href="#" onclick="window.open('http://www.newjerseyschoolofmassage.com/');"><span style="text-decoration:underline;">North Jersey School for Massage Therapy</span></a></li>
+		  		 <li><a href="#">Thomas Edison State College, Bachelor's of Arts</a></li>
+	        </ul>  
+	       </li>
+     	    <li class='has-sub '><a href='#'>Services</a>
+     	      <ul>
+     	        <li><a href="#">In Office</a></li>
+      	     <li><a href="#">House Calls</a></li>
+     	        <li><a href="#" class="branches">Skills</a>
+			       <ul>     	      
+		            <li><a href="#" onclick="window.open('http://en.wikipedia.org/wiki/Acupressure');"><span style="text-decoration:underline;">Acupressure</span></a></li>
+		            <li><a href="#" onclick="window.open('http://www.energyk.org/who-we-are/what-is-energy-kinesiology');"><span style="text-decoration:underline;">Energy Kinesiolgy</span></a></li>
+		            <li><a href="#">Therapeutic Message</a></li>
+			         <li><a href="#">Holistic Nutritionist</a></li>
+		          </ul>  
+		        </li> 
+        	   </ul>
+     	    <li class='has-sub '><a href='#'>Locations</a>
+     	    	<ul>
+		         <li><a href="#">Bayonne</a></li>
+     	         <li><a href="#">Hoboken</a></li>
+      	      <li><a href="#">Jersey City</a></li>
+     	         <li><a href="#">Union City</a></li>
+     	      </ul>
+     	    </li>
+	       <li class="has-sub"><a href='#'>Articles</a>
+		      <ul>
+		         <li><a href="#">The Courier Times</a></li>
+     	         <li><a href="#">Metro NY/NJ</a></li>
+     	      </ul>
+	       </li>
+     	    <li class="active"><a href='#' onclick="notYetProgrammed();">Make an Appointment</a></li>
+     	    <li class="active"><a href='#'>Links & Resources</a></li>
+     	    <li class="active"><a href='#' id="ContactTab" class="NavBarTab" onclick="showContact();">Contact</a></li>
+        	</li>
+  	 </ul>
+	 <input type="hidden" id="demo1" maxlength="25" size="25"/>
+	</div>
+	
+	<div id="mainPresentation" align=center>
+	
+	<div id="explainAllServices">
+	<img src="SPINE_White_Background.JPG" alt="The Spinal Column" width="150" height="300" style="float:left;">
+	<p id="mainDescription">Carol Crystal is an experienced, licensed therapist serving Jersey City and its environs. Carol is trained in several message modalities.  Providing services in her clinic or at home for those who can not travel.  Carol specializes in balancing the body and the body's energy. This improves the posture.  This helps one stand tall and straight as well as be composed and relaxed.
+	<p>
+		<div id="articles" >
+			<div id="leftArticle" class="articleForm">
+			<p id="articleTitle">Therapeutic Message
+			<p>More than just a feel good massage, therapeutic message addresses issues of tension, stress and other medical issues. Beneficial for those who have fallen, have cramps, recently undergone surgery and other conditions.
+			</div>
+			
+			<div id="middleArticle" class="articleForm">
+			<p id="articleTitle">Energy Kinesiology
+			<p>Kinesiology is the study of the muscles.  Energy and emotions trapped in the muscles, cause cramping and improper posture. Energy kinesiolgy helps people release the stress and emotions trapped in the muscles.  As the emotions are released, one is free to realize his or her full potential.
+			</div>
+
+			<div id="rightArticle" class="articleForm">
+			<p id="articleTitle">Accupressure
+			<p>Accupressure is a form of massage that massages the accupunture points. Therapeutic results are similar to accupunture without the need for needles or skin penetration.
+			</div>
+		</div>
+   </div>		
+		
+	<div id="explainShapeShifting" align=center>
+     	<img src="SPINE_White_Background.JPG" alt="The Spinal Column" width="150" height="300" style="float:left;">
+	  <p>
+	  There is more to standing tall than just an expression.  
+	  The muscles of the body express what your mind thinks and your heart feels. 
+	  <p> 
+	  Example:
+          <p>
+          <div style="background-color:rgba(0,255,243,1); /* #00fff3; */ padding-top:5px;padding-bottom:5px;">
+          <ul style="text-align:left;margin-left:130px;">
+	          <li style="list-style-type: circle;list-style-position: inside;">
+	          	<span style="margin-left:5px;">
+          		Surprise &rarr; raised eyebrows<br>
+	  				</span>
+   	       </li>
+             <li style="list-style-type: circle;list-style-position: inside;">
+	            <span style="margin-left:5px;">
+   		      Fear &rarr; raised shoulders, tightened stomach and tightened chest muscles.
+     				</span>
+      	    </li>          
+          </ul>
+          </div>
+	  <p>
+	  Your past experiences and how you react to them emotionally are expressed in your muscle tension, facial expression & posture.  
+	  <p>
+	  How muscles express emotions through posture has been studied and can be <span style="font-style:italic;">&quotread&quot</span> through therapeutic massage and other muscle testing techniques.  
+	  <p style="line-height:150%;">
+	  Conversely, you can intentionally guide your body, with a certain physical posture, 
+	  to express a certain emotion, of your chosing.  This is called <span class="bodyShapeShifting" style="font-variant:small-caps;font-weight:900;font-stretch:expanded;background-color:#00fff3;padding:3px;">&quotBody Shape Shifting&quot.</span>  
+	  <p>	  
+	  <span style="text-decoration:underline;font-variant:small-caps;">Body Shape Shifting</span> is used to accelerate any life change you with to experience.  
+	  Body Shape Shifting aids in reducing or eliminating pain; weight reduction; 
+	  locating personal courage; releasing old trapped emotions and so much more.
+	  <p>
+	  With the use of therapeutic massage, the connections between your muscle tensions 
+	  and your emotions become clear.  You can understand your emotions better.  
+	  This understanding can then be used to guide your Body Shape Shifting, to create 
+	  your own personal improvement and self help program: Fostering your total better 
+	  health &mdash; Holistic Health.
+	  <div align=center>
+	    <span class="bodyShapeShifting" style="font-variant:small-caps;font-weight:900;font-stretch:expanded;background-color:#00fff3;padding:3px;">Body Shape Shifting</span> &mdash; will greatly enhance your life quickly and inexpensively!
+	  </div>
+	</div> <!-- end explain shape shifting -->
+
+	<div id="contact" align=left width=480>
+		<img src="SPINE_White_Background.JPG" alt="The Spinal Column" width="150" height="300" style="float:left;">
+		<form id="contactEmail" name="e_form">
+		<fieldset>
+			<legend="Contact Form">
+			<label for="emadd">Email: </label>
+			<input type="text" class="formInput" name="emadd" size="30" value="Your email here">
+			<p>
+			<label for="Subject">Subject: </label>
+			<input type="text" class="formInput" name="subj" value="Email subject here">
+			<p>
+			<label for="emadd">Message:</label>
+			<p>
+			<textarea name="bodyEmail" id="messageBody" cols="80" rows="10">Your message here</textarea>
+			<div align=center>
+			<input type="button" class="formInput" Value="Send E-mail" onClick="e_friend(this.form.emadd.value,this.form.subj.value,this.form.bodyEmail.value)">
+			</div>
+			</form> 	
+		</fieldset>
+	<p>
+	</div> <!-- contact -->
+
+	</div> <!-- end mainPresentation -->
+	
+	<div id="advert"  >
+	<h3>Make an appointment today!<h3>
+	</div>
+	<br>
+	<a class="footnote2" href="mailto:givonzirkdin@gmail.com?Subject=Cinderella">Givon Zirkind, Web Design</a>
+   </div> <!-- end wholePage div -->
+
+<!-- 2.3.2015 Testing For Web Connection -->
+<!-- If can load jQuery, change fontSize -->
+<!-- If can load jQuery, change font     -->
+
+<!-- script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"\></script\>
+\<-- script\>window.jQuery || document.getElementById("bannerTitle").style.fontSize = "small" </script -->
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">
+</script>
+
+<!--script\>
+$( "#bannerTitle" ).css( "fontSize", "50px" );
+$( "#bannerTitle" ).css({"font-family":"Rouge Script"});
+</script -->
+
+<script type="text/javascript">
+	function showHome() {
+		$( "#explainShapeShifting" ).hide();
+	   $( "#contact" ).hide();
+		$( "#explainAllServices" ).show();
+		var x = document.getElementsByClassName("NavBarTab");
+		var i;
+		for (i = 0; i < x.length; i++) {
+    		x[i].style.background = "blue";
+    		x[i].style.color = "white";
+		}
+		
+		document.getElementById("HomeTab").style.color="blue";
+		document.getElementById("HomeTab").style.background="white";
+	}
+	function showAbout() {
+		$( "#explainAllServices" ).hide();
+		$( "#contact" ).hide();		
+		$( "#explainShapeShifting" ).show();
+		var x = document.getElementsByClassName("NavBarTab");
+		var i;
+		for (i = 0; i < x.length; i++) {
+    		x[i].style.background = "blue";
+    		x[i].style.color = "white";
+		}
+		document.getElementById("AboutTab").style.color="blue";
+		document.getElementById("AboutTab").style.background="white";
+	}
+	function showContact() {
+		$( "#explainAllServices" ).hide();
+		$( "#explainShapeShifting" ).hide();
+		$( "#contact" ).show();
+		var x = document.getElementsByClassName("NavBarTab");
+		var i;
+		for (i = 0; i < x.length; i++) {
+    		x[i].style.background = "blue";
+    		x[i].style.color = "white";
+		}
+		document.getElementById("ContactTab").style.color="blue";
+		document.getElementById("ContactTab").style.background="white";
+	}
+	function loadHome() {
+		$( "#explainShapeShifting" ).hide();
+		$( "#contact" ).hide();
+		$( "#explainAllServices" ).show();
+
+	}
+</script>
+
+<script type="text/javascript">
+	function changeCurNavTab() {
+
+	)
+		   /*$( "ul li a #HomeTab" ).click($("#HomeTab").css("color","blue");*/
+		   /*$( "#HomeTab" ).click($("#HomeTab").css("background-color","white");*/
+		   /* $( "#cssmenu ul li a #HomeTab" ).click(function() {alert("hello")}); */ 
+</script>
+
+<SCRIPT language="JavaScript">
+<!--
+function e_friend(e_add,subject1,body)
+{
+window.location="mailto:"+e_add+"?subject="+subject1+"&body="+body;
+}
+//-->
+
+</body>
+</html>

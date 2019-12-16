@@ -1,0 +1,551 @@
+<style>
+/* GZ Style */
+
+body { margin-top:0;
+	margin-left:0;
+	background-color:blue;
+}
+
+#banner {
+	margin-right:auto;
+	margin-left:auto;
+	/* margin-bottom: 0; */
+	border-right:0px solid black; /* need to adjust if width < 480 */
+	border-left:0px solid black; /* need to adjust if width < 480 */
+	/* border-radius:20px; */  /* %^& removed 1.28.2015  */
+	/* text-transform:uppercase; */
+	/* font-size:48px; */
+	/* background-color:#66ccff;  too manly */
+	background-color: white;
+	width:840px;
+	height:200px;
+	text-align:center;
+	font-family: Verdana, Arial, serif;
+	font-weight: 900px;
+	position:relative;
+}
+
+#bannerPic {
+	/* border-radius:18px; */  /* %^& removed 1.28.2015  */
+	height:200px;
+	width:200px;
+	padding:0px;
+	position:relative;
+	float:left;
+	margin:0;
+}
+
+#bannerTitle {
+	padding:10px;
+	text-align:center;
+	/* width:460px; */ 
+	/* font-size:90px; */  /* for google rouge script */
+	font-size:50px;  /* for arial, Tangerine & other */
+	color:white;
+	/* color:#FA7DAD; */  /* pink */
+	/*color:#F26D7D; */ /* pink two */
+	background-color:#0000ff;
+	font-family:Allura,Arvo,Verdana,cursive,arial;
+}
+
+#thePro {
+	display:table-cell;
+	vertical-align:middle;
+	/*padding:10px;*/
+	/* padding:0px; */
+	width:637px;
+	/* height:200px; */
+	/* font-size:90px; */  /* for google rouge script */
+	font-size:35px;  /* for arial, Tangerine & other */
+	color:black;
+	background-color:white;
+	/* font-family:cursive,Verdana,arial; */
+	float:right;  /* necessary for IE but, ruins Firefox */
+	/* margin-right:auto; */
+	/* margin-left:auto; */
+	
+   	position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-34%, -50%) 
+	
+}
+
+p.#thePro  {
+	text-align:center;
+	margin:0 0 0 0;
+	padding:0 0 0 0; 
+}
+
+#subTitle { 
+	font-size:18px;
+	margin:0 0 0 0;
+	padding:0 0 0 0; 
+}
+
+#namePractitioner { 
+	/* font-size:18px; */
+	margin:0 0 0 0;
+	padding:0 0 0 0; 
+	font-weight: 900;
+	font-family:Nunito,arial,serif;
+	font-size: 1.3em;
+}
+
+#membership { 
+	font-size:8px; 
+	margin:0 0 0 0;
+	padding:0 0 0 0; 
+	font-family:"Petit Formal Script",arial,serif;
+}
+
+#letters {
+	font-size:18px; 
+	font-family: "Alegreya Sans SC", "Alegreya SC", "Diplomata SC",arial,serif;
+}
+
+address { display: inline;}
+
+#contactTitle {
+	/* margin-top: 0px; */
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color:yellow;
+}
+
+#navbar {
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15px;
+	border:1px solid black;
+	border-radius:25px;
+	background-color:#66ccff;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:330px;
+}
+
+#footer {
+	margin-right:auto;
+	margin-left:auto;
+	border:1px solid black;
+	border-radius:25px;
+	/* background-color:#66ccff; */
+	/* background-color: violet; */
+	background:#FA7DAD;
+	padding-top:1px;
+	padding-bottom:1px;
+	width:275px;
+	text-align:center;
+	font-family: Tangerine, Verdana, Arial, serif;
+	font-weight: 800;
+	line-height: 0.6;
+}
+
+
+#phoneNum {
+	font-size: 20px;
+	font-weight: 900;
+	margin-left:25px;
+}
+
+#contactAddress {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+#emailAddr {
+	font-family: Verdana, Arial, serif;
+	font-style: bold;
+	font-variant: small-caps;
+}	
+
+#advert {
+	margin-right:auto;
+	margin-left:auto;
+	background:red;
+	border-radius:5px;
+	line-height:220%;
+	text-align:center;
+	max-width:315px;
+	letter-spacing:2px;"
+	font-family:  Verdana, Arial, serif;
+	font-size: 14px;
+	font-style:bold;
+	font-variant: small-caps;
+	clear:both;
+}
+input[type="submit"] {
+	border-radius:25px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+	margin-right:auto;
+	margin-left:25px;
+	font-size:14px;
+	width:480px;
+}
+
+.onTop {z-index:1;}
+
+#mainPresentation {
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+	clear:both;
+	font-weight:600;
+}
+
+#mainPresentation ul {
+	text-align:center;
+}
+
+#navbar a { 
+	background-color:#0000ff;
+	color:#FFFFFF;
+	font-size:14px;
+	margin-right:5px;
+	margin-left:5px;
+	padding-right:8px;
+	padding-left:8px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:10px;
+}
+
+.footnote {
+	font-size:12px;
+	letter-spacing:1px;
+	font-weight:800;
+}
+
+.footnote2 {
+	font-size:12px;
+	letter-spacing:1px;
+	color:yellow;
+	background:purple;
+	border-radius:5px;
+	padding:5px 5px 5px 5px;
+	margin-bottom: 5px;
+}
+
+#bigBucket {  /* table */
+    /* width: 800px; */
+    /* height:665px; */
+    /* overflow: scroll; */
+    /* white-space:nowarp; */
+    /* max-width:100%; */
+    border-collapse: collapse;
+}
+
+td {padding: 0px;}
+
+#wholePage {
+	border:3px solid black;
+	/* border-radius:25px; */  /* %^& remmoved 1.28.2015  */
+	/* width:640px; */
+	/* width:1048px; */ /* no width will fill up the page */
+	width:840px;
+	/* margin-right:auto; */  /* %^& removed 1.28.2015  */
+	/* margin-left:auto; */  /* %^& removed 1.28.2015  */
+	/* background-color:#ffff00; */ /*yellow*/
+   text-align: center;
+   margin-top: 0;
+   padding-bottom: 15px;
+	/* margin-top:-4px;*/
+   white-space: normal;
+}
+
+/* %^& added 1.28.2015  */
+#leftSidebar {
+      vertical-align: middle;
+      margin: 0;
+      white-space: normal;
+}
+
+#rightSidebar {
+      vertical-align: middle;
+      margin: 0;
+      white-space: normal;
+}
+
+/* %^& added 1.28.2015  */
+#leftSidebar img  {
+	width:350px; 
+	height:668px; 
+}
+
+/* %^& added 1.28.2015  */
+#rightSidebar img  {
+	width:350px;
+	height:668px;
+}
+
+#mainDescription {
+	text-align:justify;
+	margin-right:20px;
+	margin-left:20px;
+   font-family:Nunito,arial,serif;
+}
+
+#explainShapeShifting {
+	margin-top:25px;
+	font-size:14px;
+	clear:both;
+	font-weight:600;
+	text-align:justify;
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.bodyShapeShifting { font-family:Arvo,Verdana, Arial, serif; }
+
+#articles #explainShapeShifting { font-family:Nunito,arial,serif; }
+
+.articleForm { 
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	width:200px;
+	/*
+	margin-right:5px;
+	margin-left:5px;
+	*/
+	color:black;
+	/* background-color:lightblue; */ 
+   /* background-color:#00bff3;  */  /* try 00-191-243 */
+	background-color:rgba(00,191,243,0.8);
+	opacity:0.9;
+	filter:Alpha(opacity=980); /* for IE8 & earlier */
+	text-align:justify;	
+	padding-right:5px;
+	padding-left:5px;
+}
+
+#articleTitle { text-align:center; 
+	font-size:14px;
+	text-decoration:underline;
+}
+
+/* modified 2.10.2015 */ /* need to copy to other css sheets */
+#rightArticle {float:left;}
+#middleArticle {margin-right:5px;margin-left:5px;}
+#leftArticle {margin-right:10px;}
+
+/* contact form formatting */
+
+#contact {
+	margin-top:5px;  /* different for height */
+	/* margin-left:auto;
+	margin-right:auto; */
+	font-size:14px;
+	clear:both;
+	font-weight:600;
+}
+
+input[type="submit"] {
+	border-radius:25px;
+}
+
+input [type], .formInput { font-size:14px; }
+
+.messageBody { overvflow:scroll; }
+
+
+@media screen and (max-width: 480px) {
+	#rightSidebar #leftSidebar { display:hidden; } ;
+	border-right.#banner:0px;
+	border-left.#banner:0px;
+}
+
+#submenu {
+	display:none; 
+} 
+
+#dropdown:hover + ul#submenu{
+	display:block;
+	float:right;
+	list-style-type:none;
+	text-align:left;
+	margin-right:95px;
+	margin-top:25px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#servicesRendered {
+	list-style-position:inside;
+	margin-right:50px;
+}
+/* imported menu style sheet */
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+#cssmenu {padding: 5px;  margin: 0;  border: 0; }
+#cssmenu ul, #cssmenu li {list-style: none; margin: 0; padding: 0;}
+#cssmenu ul {position: relative; z-index: 597;}
+/* this line aligns the cssmenu bar */
+#cssmenu ul li { float: left; min-height: 1px; vertical-align: middle; letter-spacing: 1px;}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
+#cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+#cssmenu ul ul li {float: none;}
+#cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
+#cssmenu ul li:hover > ul { visibility: visible;}
+#cssmenu ul ul {bottom: 0; left: 0;}
+#cssmenu ul ul {margin-top: 0; }
+#cssmenu ul ul li {font-weight: normal;}
+#cssmenu a { display: block; line-height:1em; text-decoration: none; }
+
+#cssmenu {
+  /* background: #66ccff; */
+  /* background: violet;  */
+  background:orange;
+  /* border-bottom: 4px solid #1b9bff; */ /* removed 2.4.2015 */
+  border-bottom: 2px solid black;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px; 
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:0px;
+}
+
+/* 2.9.2015 left:5% gives left margin if not centered */
+/* #cssmenu > ul { *display: inline-block; left:5%;} */
+#cssmenu > ul { display: inline-block; /* left:5%;*/}
+
+#cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+#cssmenu a {
+    background: #0000ff; 
+    color: #CBCBCB;
+    padding: 0 5px; /* reduced from 20px to 5px 2.4.2015 */ 
+}
+
+#cssmenu ul { text-transform: uppercase; }
+
+#cssmenu ul ul {
+      border-top: 4px solid #1b9bff;
+      text-transform: none;
+      min-width: 190px; 
+}
+
+#cssmenu ul ul a {
+        /* background: #1b9bff; */
+        background:#0000ff;
+        color: #FFF;
+        border: 1px solid #0082e7;
+        border-top: 0 none;
+        line-height: 100%;
+        /* padding: 16px 20px; */
+        padding: 5px 5px;
+	     /* border-radius:20px; */
+        content: "\2192";
+}
+
+#cssmenu ul ul a:after {
+        content: "\2192";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -8px;
+}
+
+#cssmenu ul ul ul { border-top: 0 none; }
+
+#cssmenu ul ul li { position: relative }
+
+#cssmenu > ul > li > a { line-height: 25px; margin-bottom:5px; }  /* reduced tab height & separate vertical tabs */
+
+#cssmenu ul ul li:first-child > a { border-top: 1px solid #0082e7; }
+#cssmenu ul ul li:hover > a { background: #35a6ff; }
+
+#cssmenu ul ul li:last-child > a {
+          /* border-radius: 0 0 3px 3px; */
+	       /* border-radius:20px; removed 2.4.2015 */
+          box-shadow: 0 1px 0 #1b9bff; 
+}
+
+#cssmenu ul ul li:last-child:hover > a { 
+       /* border-radius: 0 0 3px 3px; */
+	    /* border-radius:20px; removed 2.4.2015 */
+}
+
+#cssmenu ul ul li.has-sub > a:after {
+          content: "\2192";
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          margin-top: -8px;
+ }
+
+ #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
+      /* background: #1b9bff; */
+	   background:#0000ff;
+      color: #FFF;
+	   /* border-radius:20px; */
+	   /* margin-right:10px; */
+	   border-right: 2px solid black;  /* added 2.4.2015  */
+	   border-left: 2px solid black;   /* added 2.4.2015  */
+	   padding-left: 8px;               /* added 2.4.2015  */
+ }
+
+ #cssmenu ul li.has-sub > a {  /* rounding middle tabs */
+      /* background: #1b9bff; */
+	   background:#0000ff;
+      color: #FFF;
+	   /* border-radius:20px; removed 2.4.2015 */
+	   /* margin-right:10px; removed 2.4.2015  */
+	   border-right: 2px solid black;  /* added 2.4.2015  */
+	   border-left: 2px solid black;   /* added 2.4.2015  */
+	   padding-left: 8px;               /* added 2.4.2015  */
+ }
+
+#cssmenu ul li.has-sub > a:after {
+      content: "\2192";
+      margin-left: 5px; 
+}
+
+#cssmenu ul li.last ul {
+      left: auto;
+      right: 0;
+}
+
+ #cssmenu ul li.last ul ul {
+        left: auto;
+        right: 99.5%;
+ }
+
+/* does nothing */
+#cssmenu ul il.has-sub ul {
+	background:#0000ff;
+}
+
+ /* added 2.4.2015  */
+#cssmenu ul li.has-sub ul li > a:after {
+      content: '';
+  
+}
+
+ /* added 2.4.2015  */
+#cssmenu ul li.has-sub ul li > a.branches:after {
+      content: "\2192";
+  
+}
+
+.underline { text-decoration: underline; }
+
+
+</style>
